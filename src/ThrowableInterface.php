@@ -35,7 +35,7 @@ interface ThrowableInterface extends StringableInterface
     public function getCode();
 
     /**
-     * Retrieves the path to the file where this instance was thrown.
+     * Retrieves the path to the file where this instance was created.
      *
      * @since [*next-version*]
      *
@@ -44,7 +44,7 @@ interface ThrowableInterface extends StringableInterface
     public function getFile();
 
     /**
-     * Retrieves the number of the line where the exception was thrown.
+     * Retrieves the number of the line where the exception was created.
      *
      * @since [*next-version*]
      *

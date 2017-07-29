@@ -3,6 +3,7 @@
 namespace Dhii\Exception;
 
 use Exception as RootException;
+use Dhii\Util\String\StringableInterface;
 
 /**
  * Formalizes the interface of exceptions and errors.
@@ -13,19 +14,76 @@ use Exception as RootException;
  *
  * @since [*next-version*]
  */
-interface ThrowableInterface
+interface ThrowableInterface extends StringableInterface
 {
     /**
+     * Retrieves the message.
+     *
      * @since [*next-version*]
      *
-     * @return string|Stringable
+     * @return string The message.
      */
-    public getMessage();
-abstract public int getCode();
-abstract public string getFile();
-abstract public int getLine();
-abstract public array getTrace();
-abstract public string getTraceAsString();
-abstract public getPrevious();
-abstract public string __toString();
+    public function getMessage();
+
+    /**
+     * Retrieves the code.
+     *
+     * @since [*next-version*]
+     *
+     * @return int The code.
+     */
+    public function getCode();
+
+    /**
+     * Retrieves the path to the file where this instance was thrown.
+     *
+     * @since [*next-version*]
+     *
+     * @return string Path to the file.
+     */
+    public function getFile();
+
+    /**
+     * Retrieves the number of the line where the exception was thrown.
+     *
+     * @since [*next-version*]
+     *
+     * @return int The line number.
+     */
+    public function getLine();
+
+    /**
+     * Retrieves the backtrace data.
+     *
+     * @since [*next-version*]
+     *
+     * @return array[] Frames of the backtrace, in the same format as
+     *                 returned by {@see debug_backtrace()}.
+     */
+    public function getTrace();
+
+    /**
+     * Retrieves the trace in human-readable string format.
+     *
+     * @since [*next-version*]
+     *
+     * @return string The string representation of backtrace steps.
+     */
+    public function getTraceAsString();
+
+    /**
+     * Retrieves the previous, inner exception for chaining.
+     *
+     * @since [*next-version*]
+     *
+     * @return RootException|null The inner exception, if any.
+     */
+    public function getPrevious();
+
+    /**
+     * Retrieves the human-readable representation of the error.
+     *
+     * @since [*next-version*]
+     */
+    public function __toString();
 }

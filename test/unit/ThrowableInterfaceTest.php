@@ -16,7 +16,7 @@ class ThrowableInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Exception\\ThrowableInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\ThrowableInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -50,8 +50,6 @@ class ThrowableInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
-        );
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
     }
 }

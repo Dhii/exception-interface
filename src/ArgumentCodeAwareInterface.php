@@ -8,14 +8,14 @@ namespace Dhii\Exception;
  * Can be useful for argument-related exceptions that need to provide more
  * specific information about the argument.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ArgumentCodeAwareInterface
 {
     /**
      * Retrieves the argument code associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string|int The argument code. Something that identifies an argument
      *                    in its scope.

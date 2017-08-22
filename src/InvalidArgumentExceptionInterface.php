@@ -5,14 +5,14 @@ namespace Dhii\Exception;
 /**
  * Represents an exception that signals an invalid function argument.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface InvalidArgumentExceptionInterface extends ThrowableInterface
 {
     /**
      * Retrieves the problematic argument.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return mixed The argument value.
      */

@@ -12,14 +12,14 @@ use Dhii\Util\String\StringableInterface;
  * PHP 7.0, which introduces the {@link http://php.net/manual/en/class.throwable.php Throwable}
  * interface.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ThrowableInterface extends StringableInterface
 {
     /**
      * Retrieves the message.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string The message.
      */
@@ -28,7 +28,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the code.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return int The code.
      */
@@ -37,7 +37,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the path to the file where this instance was created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string Path to the file.
      */
@@ -46,7 +46,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the number of the line where the exception was created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return int The line number.
      */
@@ -55,7 +55,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the backtrace data.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return array[] Frames of the backtrace, in the same format as
      *                 returned by {@see debug_backtrace()}.
@@ -65,7 +65,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the trace in human-readable string format.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string The string representation of backtrace steps.
      */
@@ -74,7 +74,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the previous, inner exception for chaining.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return RootException|null The inner exception, if any.
      */
@@ -83,7 +83,7 @@ interface ThrowableInterface extends StringableInterface
     /**
      * Retrieves the human-readable representation of the error.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function __toString();
 }

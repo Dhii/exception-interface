@@ -8,4 +8,21 @@
 
 Interfaces for most common exceptions.
 
+## Details
+- [`ThrowableInterface`] - The base of all exception interfaces. Declares
+all the same methods as `Exception` in a compatible way, and additionally
+extends [`StringableInterface`].
+- [`InvalidArgumentExceptionInterface`] - Allows de-coupling from the vanilla
+[`InvalidArgumentException`], and adds the much needed `getArgument()` method,
+making it actually useful besides signalling the problem type.
+- [`ArgumentCodeAwareInterface`] - Useful with `InvalidArgumentExceptionInterface`
+for providing information about the source of the problematic argument.
+
+
+[`ThrowableInterface`]:                 src/ThrowableInterface.php
+[`InvalidArgumentExceptionInterface`]:  src/InvalidArgumentExceptionInterface.php
+[`ArgumentCodeAwareInterface`]:         src/ArgumentCodeAwareInterface.php
+[`StringableInterface`]:                https://github.com/Dhii/stringable-interface/blob/master/src/StringableInterface.php
+[`InvalidArgumentException`]:           http://php.net/manual/en/class.invalidargumentexception.php
+
 [Dhii]: https://github.com/Dhii/dhii

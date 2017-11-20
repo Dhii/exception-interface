@@ -9,6 +9,8 @@ use Dhii\Data\ValueAwareInterface;
  *
  * @since [*next-version*]
  */
-interface BadValueExceptionInterface extends ValueAwareInterface
+interface BadValueExceptionInterface extends
+    ThrowableInterface,
+    ValueAwareInterface
 {
 }

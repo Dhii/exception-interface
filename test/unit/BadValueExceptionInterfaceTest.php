@@ -54,6 +54,5 @@ class BadValueExceptionInterfaceTest extends TestCase
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
         $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not extend required interface');
-        $this->assertInstanceOf('Dhii\Data\ValueAwareInterface', $subject, 'Subject does not extend required interface');
     }
 }

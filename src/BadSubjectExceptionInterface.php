@@ -9,4 +9,12 @@ namespace Dhii\Exception;
  */
 interface BadSubjectExceptionInterface extends ThrowableInterface
 {
+    /**
+     * Retrieves the problematic subject.
+     *
+     * @since [*next-version*]
+     *
+     * @return mixed|null The subject, if any.
+     */
+    public function getSubject();
 }

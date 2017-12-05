@@ -36,7 +36,8 @@ class InvalidArgumentExceptionInterfaceTest extends TestCase
                 ->getTraceAsString()
                 ->getPrevious()
                 ->__toString()
-                ->getArgument()
+
+                ->getSubject()
                 ->new();
 
         return $mock;
@@ -52,5 +53,6 @@ class InvalidArgumentExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
+        $this->assertInstanceOf('Dhii\Exception\BadSubjectExceptionInterface', $subject, 'Subject does not implement required interface');
     }
 }

@@ -37,7 +37,7 @@ class BadSubjectExceptionInterfaceTest extends TestCase
                 ->getPrevious()
                 ->__toString()
 
-                ->getValue()
+                ->getSubject()
                 ->new();
 
         return $mock;

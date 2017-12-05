@@ -9,12 +9,4 @@ namespace Dhii\Exception;
  */
 interface InvalidArgumentExceptionInterface extends BadSubjectExceptionInterface
 {
-    /**
-     * Retrieves the problematic argument.
-     *
-     * @since 0.1
-     *
-     * @return mixed The argument value.
-     */
-    public function getArgument();
 }

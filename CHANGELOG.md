@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [*next-version*] - YYYY-MM-DD
 
 ### Changed
+- **BC Breaking**: The argument value of `InvalidArgumentExceptionInterface`
+now retrieved via `getSubject()`, as it extends the new `BadSubjectExceptionInterface`.
 
 ## [0.1] - 2017-09-01
 Initial version.

@@ -7,6 +7,6 @@ namespace Dhii\Exception;
  *
  * @since [*next-version*]
  */
-interface BadValueExceptionInterface extends ThrowableInterface
+interface BadSubjectExceptionInterface extends ThrowableInterface
 {
 }

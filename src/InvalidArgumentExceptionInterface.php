@@ -7,7 +7,7 @@ namespace Dhii\Exception;
  *
  * @since 0.1
  */
-interface InvalidArgumentExceptionInterface extends ThrowableInterface
+interface InvalidArgumentExceptionInterface extends BadSubjectExceptionInterface
 {
     /**
      * Retrieves the problematic argument.

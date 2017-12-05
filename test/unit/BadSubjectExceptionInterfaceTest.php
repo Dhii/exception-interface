@@ -5,25 +5,25 @@ namespace Dhii\Exception\UnitTest;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Exception\BadValueExceptionInterface}.
+ * Tests {@see \Dhii\Exception\BadSubjectExceptionInterface}.
  *
  * @since [*next-version*]
  */
-class BadValueExceptionInterfaceTest extends TestCase
+class BadSubjectExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\BadValueExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\BadSubjectExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \Dhii\Exception\BadValueExceptionInterface
+     * @return \Dhii\Exception\BadSubjectExceptionInterface
      */
     public function createInstance()
     {

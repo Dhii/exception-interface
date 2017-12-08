@@ -12,14 +12,18 @@ Interfaces for most common exceptions.
 - [`ThrowableInterface`] - The base of all exception interfaces. Declares
 all the same methods as `Exception` in a compatible way, and additionally
 extends [`StringableInterface`].
+- [`BadSubjectExceptionInterface`] - Base interface for all exceptions that
+are related to some value being invalid, malformed, out of range, etc. Exposes
+that value via `getSubject()`.
 - [`InvalidArgumentExceptionInterface`] - Allows de-coupling from the vanilla
-[`InvalidArgumentException`], and adds the much needed `getArgument()` method,
-making it actually useful besides signalling the problem type.
+[`InvalidArgumentException`], and makes it more useful besides signalling the
+problem type by exposing the argument via `BadSubjectExceptionInterface#getSubejct()`.
 - [`ArgumentCodeAwareInterface`] - Useful with `InvalidArgumentExceptionInterface`
 for providing information about the source of the problematic argument.
 
 
 [`ThrowableInterface`]:                 src/ThrowableInterface.php
+[`BadSubjectExceptionInterface`]:       src/BadSubjectExceptionInterface.php
 [`InvalidArgumentExceptionInterface`]:  src/InvalidArgumentExceptionInterface.php
 [`ArgumentCodeAwareInterface`]:         src/ArgumentCodeAwareInterface.php
 [`StringableInterface`]:                https://github.com/Dhii/stringable-interface/blob/master/src/StringableInterface.php

@@ -6,7 +6,7 @@ use Xpmock\TestCase;
 use Dhii\Exception\OutOfRangeExceptionInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Exception\OutOfRangeExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */

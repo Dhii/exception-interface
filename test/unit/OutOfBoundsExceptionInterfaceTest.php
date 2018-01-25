@@ -3,21 +3,21 @@
 namespace Dhii\Exception\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Exception\OutOfRangeExceptionInterface as TestSubject;
+use Dhii\Exception\OutOfBoundsExceptionInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
-class OutOfRangeExceptionInterfaceTest extends TestCase
+class OutOfBoundsExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\OutOfRangeExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\OutOfBoundsExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -29,17 +29,17 @@ class OutOfRangeExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->getMessage()
-                ->getCode()
-                ->getFile()
-                ->getLine()
-                ->getTrace()
-                ->getTraceAsString()
-                ->getPrevious()
-                ->__toString()
+            ->getMessage()
+            ->getCode()
+            ->getFile()
+            ->getLine()
+            ->getTrace()
+            ->getTraceAsString()
+            ->getPrevious()
+            ->__toString()
 
-                ->getSubject()
-                ->new();
+            ->getSubject()
+            ->new();
 
         return $mock;
     }

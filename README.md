@@ -20,13 +20,22 @@ that value via `getSubject()`.
 problem type by exposing the argument via `BadSubjectExceptionInterface#getSubejct()`.
 - [`ArgumentCodeAwareInterface`] - Useful with `InvalidArgumentExceptionInterface`
 for providing information about the source of the problematic argument.
+- [`OutOfBoundsExceptionInterface`] - Complementing the native [`OutOfBoundsException`], it occurs when a key is
+addressed in a set that does not have it, like accessing a non-existing array key. Exposes the bad key.
+- [`OutOfRangeExceptionInterface`] - Complementing the native [`OutOfRangeException`], it occurs when a value is
+valid but illegal, i.e. is outside of the allowed range, like when an integer that represents a colour and must be
+0-255 has the value of 256. Exposes the bad value.
 
 
 [`ThrowableInterface`]:                 src/ThrowableInterface.php
 [`BadSubjectExceptionInterface`]:       src/BadSubjectExceptionInterface.php
 [`InvalidArgumentExceptionInterface`]:  src/InvalidArgumentExceptionInterface.php
 [`ArgumentCodeAwareInterface`]:         src/ArgumentCodeAwareInterface.php
+[`OutOfBoundsExceptionInterface`]:      src/OutOfBoundsExceptionInterface.php
+[`OutOfRangeExceptionInterface`]:       src/OutOfRangeExceptionInterface.php
 [`StringableInterface`]:                https://github.com/Dhii/stringable-interface/blob/master/src/StringableInterface.php
 [`InvalidArgumentException`]:           http://php.net/manual/en/class.invalidargumentexception.php
+[`OutOfBoundsException`]:               http://php.net/manual/en/class.outofboundsexception.php
+[`OutOfRangeException`]:                http://php.net/manual/en/class.outofrangeexception.php
 
 [Dhii]: https://github.com/Dhii/dhii

@@ -26,6 +26,8 @@ addressed in a set that does not have it, like accessing a non-existing array ke
 valid but illegal, i.e. is outside of the allowed range, like when an integer that represents a colour and must be
 0-255 has the value of 256. Exposes the bad value.
 - [`RuntimeExceptionInterface`][RuntimeExceptionInterface] - A generic runtime problem.
+- [`InternalExceptionInterface`][InternalExceptionInterface] - A problem that occurs in relation to the inner workings
+of the unit, and is not caused by the consumer.
 
 
 [`ThrowableInterface`]:                 src/ThrowableInterface.php
@@ -35,6 +37,7 @@ valid but illegal, i.e. is outside of the allowed range, like when an integer th
 [`OutOfBoundsExceptionInterface`]:      src/OutOfBoundsExceptionInterface.php
 [`OutOfRangeExceptionInterface`]:       src/OutOfRangeExceptionInterface.php
 [RuntimeExceptionInterface]:            src/RuntimeExceptionInterface.php
+[InternalExceptionInterface]:           src/InternalExceptionInterface.php
 [`StringableInterface`]:                https://github.com/Dhii/stringable-interface/blob/master/src/StringableInterface.php
 [`InvalidArgumentException`]:           http://php.net/manual/en/class.invalidargumentexception.php
 [`OutOfBoundsException`]:               http://php.net/manual/en/class.outofboundsexception.php

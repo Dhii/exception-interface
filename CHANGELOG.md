@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [*next-version*] - YYYY-MM-DD
 
+## [0.2-alpha1] - 2018-02-19
+### Added
+- `RuntimeExceptionInterface`.
+
 ### Changed
 - **BC Breaking**: The argument value of `InvalidArgumentExceptionInterface`
 now retrieved via `getSubject()`, as it extends the new `BadSubjectExceptionInterface`.

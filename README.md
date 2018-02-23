@@ -27,7 +27,7 @@ valid but illegal, i.e. is outside of the allowed range, like when an integer th
 0-255 has the value of 256. Exposes the bad value.
 - [`RuntimeExceptionInterface`][RuntimeExceptionInterface] - A generic runtime problem.
 - [`InternalExceptionInterface`][InternalExceptionInterface] - A problem that occurs in relation to the inner workings
-of the unit, and is not caused by the consumer.
+of the unit, and is not caused by the consumer. Guarantees to expose an inner exception.
 
 
 [`ThrowableInterface`]:                 src/ThrowableInterface.php

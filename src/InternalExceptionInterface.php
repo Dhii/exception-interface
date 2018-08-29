@@ -14,12 +14,12 @@ use Exception as RootException;
  * Exceptions of this type guarantee an inner exceptions, so that consumers
  * can have a way of determining the cause of the problem.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface InternalExceptionInterface extends ThrowableInterface
 {
     /**
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return RootException
      */

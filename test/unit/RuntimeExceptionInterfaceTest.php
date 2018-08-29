@@ -8,21 +8,21 @@ use Dhii\Exception\RuntimeExceptionInterface as TestSubject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class RuntimeExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\RuntimeExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return TestSubject
      */
@@ -46,7 +46,7 @@ class RuntimeExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

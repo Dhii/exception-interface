@@ -8,21 +8,21 @@ use Dhii\Exception\OutOfRangeExceptionInterface as TestSubject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class OutOfRangeExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\OutOfRangeExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return TestSubject
      */
@@ -47,7 +47,7 @@ class OutOfRangeExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

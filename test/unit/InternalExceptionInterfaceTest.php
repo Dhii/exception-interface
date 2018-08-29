@@ -8,21 +8,21 @@ use Dhii\Exception\InternalExceptionInterface as TestSubject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class InternalExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\InternalExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return TestSubject
      */
@@ -46,7 +46,7 @@ class InternalExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

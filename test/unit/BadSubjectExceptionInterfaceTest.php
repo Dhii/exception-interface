@@ -7,21 +7,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \Dhii\Exception\BadSubjectExceptionInterface}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class BadSubjectExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\BadSubjectExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return \Dhii\Exception\BadSubjectExceptionInterface
      */
@@ -46,7 +46,7 @@ class BadSubjectExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

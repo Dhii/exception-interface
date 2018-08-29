@@ -5,14 +5,14 @@ namespace Dhii\Exception;
 /**
  * An exception that occurs in relation to a wrong, invalid, or erroneous value.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface BadSubjectExceptionInterface extends ThrowableInterface
 {
     /**
      * Retrieves the problematic subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return mixed|null The subject, if any.
      */

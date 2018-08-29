@@ -5,7 +5,7 @@ namespace Dhii\Exception;
 /**
  * Represents a generic runtime exception.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface RuntimeExceptionInterface extends ThrowableInterface
 {

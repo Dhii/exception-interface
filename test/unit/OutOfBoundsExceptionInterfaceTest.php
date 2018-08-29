@@ -3,42 +3,43 @@
 namespace Dhii\Exception\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Exception\OutOfBoundsExceptionInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Exception\InvalidArgumentExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since 0.2
  */
-class InvalidArgumentExceptionInterfaceTest extends TestCase
+class OutOfBoundsExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\InvalidArgumentExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\OutOfBoundsExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      *
-     * @return \Dhii\Exception\InvalidArgumentExceptionInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->getMessage()
-                ->getCode()
-                ->getFile()
-                ->getLine()
-                ->getTrace()
-                ->getTraceAsString()
-                ->getPrevious()
-                ->__toString()
+            ->getMessage()
+            ->getCode()
+            ->getFile()
+            ->getLine()
+            ->getTrace()
+            ->getTraceAsString()
+            ->getPrevious()
+            ->__toString()
 
-                ->getSubject()
-                ->new();
+            ->getSubject()
+            ->new();
 
         return $mock;
     }
@@ -46,7 +47,7 @@ class InvalidArgumentExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

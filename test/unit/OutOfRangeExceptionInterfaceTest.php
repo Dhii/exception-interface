@@ -3,27 +3,28 @@
 namespace Dhii\Exception\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Exception\OutOfRangeExceptionInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Exception\InvalidArgumentExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since 0.2
  */
-class InvalidArgumentExceptionInterfaceTest extends TestCase
+class OutOfRangeExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\InvalidArgumentExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\OutOfRangeExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      *
-     * @return \Dhii\Exception\InvalidArgumentExceptionInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
@@ -46,7 +47,7 @@ class InvalidArgumentExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since 0.2
      */
     public function testCanBeCreated()
     {
